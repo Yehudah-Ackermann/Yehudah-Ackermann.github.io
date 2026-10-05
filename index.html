@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yehudah Ackermann</title>
+<meta name="description" content="Yehudah Ackermann: M.Sc. aerospace engineering student at the Technion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --fg:#14181f; --muted:#5b6472; --line:#e4e7ec; --accent:#1f5fbf; --accent-soft:#eaf1fb; --card:#f7f8fa;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1218; --fg:#e8ebf0; --muted:#9aa3b2; --line:#252b36; --accent:#6ea2ff; --accent-soft:#172338; --card:#151a22; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+header{padding-bottom:28px;border-bottom:1px solid var(--line)}
+h1{font-size:2.1rem;line-height:1.15;margin:0 0 6px;letter-spacing:-.02em}
+.role{font-size:1.05rem;color:var(--muted);margin:0 0 18px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--line);color:var(--fg);background:var(--card)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+section{padding-top:30px}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 14px}
+p{margin:0 0 12px}
+.item{margin:0 0 22px}
+.item-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 16px}
+.item h3{font-size:1.02rem;margin:0}
+.when{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.where{color:var(--muted);font-size:.93rem;margin:0 0 6px}
+ul{margin:6px 0 0;padding-left:20px}
+.breadth{list-style:none;padding-left:0}
+.breadth li{margin:0 0 10px}
+.breadth .when{display:inline-block;min-width:4.6em}
+li{margin:3px 0}
+.highlight{background:var(--accent-soft);border-radius:14px;padding:18px 18px 8px;margin-bottom:22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.tag{font-size:.85rem;padding:4px 10px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+.skills{display:grid;grid-template-columns:150px 1fr;gap:6px 16px}
+.skills dt{color:var(--muted);font-size:.93rem}
+.skills dd{margin:0}
+@media (max-width:520px){ h1{font-size:1.75rem} .skills{grid-template-columns:1fr} .skills dt{margin-top:8px} }
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Yehudah Ackermann</h1>
+  <p class="role">M.Sc. Aerospace Engineering student &middot; Technion &middot; Haifa</p>
+  <div class="links">
+    <a class="btn primary" href="Yehudah_Ackermann_CV.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>Download CV</a>
+    <a class="btn" href="mailto:yehudah.ackermann@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>yehudah.ackermann@gmail.com</a>
+  </div>
+</header>
+
+<section>
+  <h2>Profile</h2>
+  <p>M.Sc. student in aerospace engineering at the Technion, focusing on air-breathing rotating detonation combustors. Before that, two years building precision cryogenic and vacuum hardware for quantum-technology research, from design and machining to integration and test. Quick to generate workable design concepts and carry them through to hardware; strongest where physics, hardware and data processing meet.</p>
+</section>
+
+<section>
+  <h2>Current research</h2>
+  <div class="highlight">
+    <div class="item">
+      <div class="item-head"><h3>Rotating detonation scramjet (M.Sc. thesis)</h3><span class="when">2026&ndash;present</span></div>
+      <p class="where">Technion &ndash; Israel Institute of Technology, Faculty of Aerospace Engineering</p>
+      <ul>
+        <li>Integrating a rotating detonation combustor into a scramjet flow path, end to end: theory, design, simulation, fabrication and testing.</li>
+        <li>CFD of supersonic mixing and detonation (OpenFOAM), validated against published experiments.</li>
+        <li>Instrumentation and data acquisition for high-speed combustion diagnostics.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="item">
+    <div class="item-head"><h3>Research Technician</h3><span class="when">Jul 2022 &ndash; Jul 2024</span></div>
+    <p class="where">Simon Fraser University, Silicon Quantum Technology Group &middot; Burnaby, BC, Canada</p>
+    <ul>
+      <li>Designed, machined and integrated custom hardware for cryogenic and vacuum systems (1 K, wet/dry cryostats).</li>
+      <li>Built precision calibration, magnetic-field and microwave hardware to tight specifications.</li>
+      <li>Set up and maintained lab infrastructure: high vacuum, helium handling and mechanical systems.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Additional experience &amp; projects</h2>
+  <ul class="breadth">
+    <li><span class="when">2022&ndash;24</span> <strong>Photonic Inc., Research Assistant</strong>: rapid-prototyping tools for liquid-helium setups; automated verification of DC, RF and microwave signal lines at cryogenic temperatures.</li>
+    <li><span class="when">2021</span> <strong>Canadian Nuclear Laboratories, Applied Physics Intern</strong>: algorithms to determine uranium enrichment from gamma-ray spectra.</li>
+    <li><span class="when">2020</span> <strong>McMaster University, Undergraduate Researcher</strong>: spectral discretization methods in MATLAB (Chebfun); co-authored an open-access paper on high-precision function computation.</li>
+    <li><span class="when">2021&ndash;22</span> <strong>Automatic bike-wheel truing stand</strong>: led a 4-person team combining FE modelling, machine vision and mechatronic control for sub-millimetre alignment; won Best Use of Mechanical Design.</li>
+    <li><span class="when">2020</span> <strong>Bluetooth indoor positioning</strong>: multi-microcontroller (MQTT) system for room-level location from RSSI mapping.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="item">
+    <div class="item-head"><h3>M.Sc. Aerospace Engineering</h3><span class="when">2026 &ndash; 2028</span></div>
+    <p class="where">Technion &ndash; Israel Institute of Technology &middot; Haifa, Israel</p>
+  </div>
+  <div class="item">
+    <div class="item-head"><h3>B.Eng. Engineering Physics, Minor in Applied Mathematics</h3><span class="when">2017 &ndash; 2022</span></div>
+    <p class="where">McMaster University &middot; Hamilton, Canada</p>
+    <p>Dean&rsquo;s Honour List (2020) &middot; Stewart Fund Award</p>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Programming</dt><dd>Python, MATLAB, C, C++, Maple, APDL; Linux, Git</dd>
+    <dt>Simulation &amp; CAD</dt><dd>OpenFOAM, ANSYS (Mechanical, CFX, Fluent), CalculiX, Gmsh, SolidWorks, Fusion 360</dd>
+    <dt>Hands-on</dt><dd>Manual machining, 3D printing (FDM/SLA), vacuum systems, cryogenics, electronics</dd>
+        <dt>Languages</dt><dd>English (fluent), Hebrew (basic) &middot; made Aliyah in 2025</dd>
+  </dl>
+</section>
+
+<footer>References available on request.</footer>
+</main>
+</body>
+</html>
